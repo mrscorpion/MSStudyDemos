@@ -14,11 +14,10 @@
 @end
 
 @implementation ViewController
-
+#pragma mark - View Life Cycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     
     // UIImageView ignored user events by default, so set
     // `userInteractionEnabled` to YES for receive touch events.
@@ -33,6 +32,7 @@
     // Update snap point when layout occured
     [self.dragView updateSnapPoint];
 }
+
 
 - (void)didReceiveMemoryWarning
 {
